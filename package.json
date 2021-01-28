@@ -5,8 +5,8 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc .\\src\\index.ts --outDir build  && node build\\index.js",
-    "parser": "tsc .\\src\\parser.ts --outDir build  && node build\\parser.js"
+    "start": "tsc ./src/index.ts --outDir build  && node build/index.js",
+    "parser": "tsc ./src/parser.ts --outDir build  && node build/parser.js"
   },
   "author": "Lorenzo Pappalardo",
   "license": "GPL-3.0-or-later",
