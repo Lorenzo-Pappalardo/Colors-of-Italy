@@ -15,21 +15,21 @@
   "dependencies": {
     "@types/node": "^14.14.30",
     "@types/typescript": "^2.0.0",
-    "telegraf": "^4.0.3"
+    "typescript": "^4.1.5",
+    "telegraf": "^4.0.3",
+    "axios": "^0.21.1",
+    "cheerio": "^0.22.0"
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.24",
     "@typescript-eslint/eslint-plugin": "^4.15.1",
     "@typescript-eslint/parser": "^4.15.1",
-    "axios": "^0.21.1",
-    "cheerio": "^0.22.0",
     "eslint": "^7.20.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.3.1",
-    "prettier": "2.2.1",
-    "typescript": "^4.1.5"
+    "prettier": "2.2.1"
   }
 }
