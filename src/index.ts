@@ -1,6 +1,7 @@
 import { Context, Telegraf } from 'telegraf';
-const config = require('../config.json');
 import scrape from './scraper';
+
+const config = require('../config.json');
 
 const bot: Telegraf<Context> = new Telegraf(config.BOT_TOKEN);
 bot.use(async (ctx: Context, next: Function) => {
@@ -13,7 +14,13 @@ bot.start(ctx =>
   ctx.replyWithSticker('CAACAgIAAxkBAAIClV_g6QGPC23_jVb-FMy_YWbJ_XlEAAJvAAPb234AAZlbUKh7k4B0HgQ')
 );
 bot.hears(['Hi', 'hi', 'Hello', 'hello'], ctx => ctx.reply('Hey xD'));
-bot.command('news', async ctx => await scrape().then(res => ctx.reply(res.join('\n\n'))));
-bot.launch();
+bot
+  .command('news', async ctx => scrape().then(res => ctx.reply(res.join('\n\n'))))
+  .catch(err => {
+    console.error(err);
+  });
+bot.launch().catch(err => {
+  console.error(err);
+});
 
 console.log('Bot started!');
