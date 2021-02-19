@@ -14,11 +14,11 @@ bot.start(ctx =>
   ctx.replyWithSticker('CAACAgIAAxkBAAIClV_g6QGPC23_jVb-FMy_YWbJ_XlEAAJvAAPb234AAZlbUKh7k4B0HgQ')
 );
 bot.hears(['Hi', 'hi', 'Hello', 'hello'], ctx => ctx.reply('Hey xD'));
-bot
-  .command('news', async ctx => scrape().then(res => ctx.reply(res.join('\n\n'))))
-  .catch(err => {
-    console.error(err);
-  });
+bot.command('regioni', async ctx =>
+  scrape()
+    .then(res => ctx.reply(res))
+    .catch(err => console.error(err))
+);
 bot.launch().catch(err => {
   console.error(err);
 });
