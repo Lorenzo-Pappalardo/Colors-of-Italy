@@ -50,11 +50,11 @@ export default async function scrape(): Promise<string> {
 
   let finalResult: string = '';
   areas.forEach((area: Area) => {
-    finalResult += 'Zona ';
+    finalResult += '*Zona ';
     finalResult += area.color;
-    finalResult += '\n-------------------\n';
+    finalResult += '*\n';
     if (area.regions.length === 0) {
-      finalResult += 'Nessuna Regione\n\n';
+      finalResult += '_Nessuna Regione_\n';
     }
     area.regions.forEach((region: string) => {
       finalResult += region;
@@ -68,4 +68,4 @@ export default async function scrape(): Promise<string> {
 
 scrape().catch(err => {
   console.error(err);
-}); // Uncomment when running this single file
+});
