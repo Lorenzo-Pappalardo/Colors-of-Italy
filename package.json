@@ -4,9 +4,8 @@
   "description": "My Bot",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc ./src/index.ts --outDir build  && node build/index.js",
-    "scrape": "tsc ./src/scraper.ts --outDir build  && node build/scraper.js",
+    "start": "tsc && node build/index.js",
+    "scrape": "tsc && node build/scraper.js",
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix"
   },
