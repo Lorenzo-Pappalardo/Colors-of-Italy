@@ -3,7 +3,7 @@
 In response to the [COVID-19 pandemic](https://en.wikipedia.org/wiki/COVID-19) that spread worldwide, Italy was divided in areas with different colors based on virus' circulation.<br>
 For more info check [this page](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Italy) on Wikipedia.
 ## Technical stuff
-The aim of this project is to allow users to have an overview on Italy's pandemic sitution by simply interacting with a [Telegram Bot](https://core.telegram.org/bots).
+The aim of this project is to allow users to have an overview of Italy's pandemic situation by simply interacting with a [Telegram Bot](https://core.telegram.org/bots).
 ### Configuration
 After cloning the project, a new file should be added to project's root directory.<br>
 This file should be named "config.json" and it should have this key-value pair:
