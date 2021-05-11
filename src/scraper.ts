@@ -1,3 +1,5 @@
+/*This code intends no harm to the scraped website and its sole purpose is to guarantee the authenticity of information provided to the user*/
+
 import * as cheerio from 'cheerio';
 import axios from 'axios';
 import * as fs from 'fs';
