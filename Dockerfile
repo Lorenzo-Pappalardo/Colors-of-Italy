@@ -1,5 +1,4 @@
-FROM node:14
-WORKDIR /bot
+FROM node:latest
 COPY package* .
 RUN npm install
 COPY . .
