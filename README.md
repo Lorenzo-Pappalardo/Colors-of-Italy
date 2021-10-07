@@ -13,6 +13,7 @@ The aim of this project is to allow users to have an overview of Italy's pandemi
 
 Before running the code, it is necessary to set an environment variable with name "TOKEN" that holds your bot's token.<br>
 There are different ways to set environment variables, check out [this](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables) if you are using Windows and [this](https://www.redhat.com/sysadmin/linux-environment-variables) if you're using Linux or MacOS.<br>
+If you are using Docker you should set the container's environment variable too, check out [this](https://docs.docker.com/engine/reference/commandline/run/).
 You can get your bot's API key by chatting with [BotFather](https://t.me/botfather). For more information, check the [official telegram documentation](https://core.telegram.org/bots).
 
 ### Running
