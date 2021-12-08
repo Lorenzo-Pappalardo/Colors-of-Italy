@@ -1,8 +1,7 @@
 {
-  "name": "mybot",
+  "name": "colorsofitaly",
   "version": "1.0.0",
-  "description": "My Bot",
-  "main": "index.ts",
+  "description": "Colors of Italy",
   "scripts": {
     "start": "tsc && node build/index.js",
     "scrape": "tsc && node build/scraper.js",
@@ -12,22 +11,22 @@
   "author": "Lorenzo Pappalardo",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@types/node": "^15.0.2",
-    "axios": "^0.21.2",
+    "@types/node": "^16.11.12",
+    "axios": "^0.24.0",
     "cheerio": "^0.22.0",
-    "telegraf": "^4.3.0",
-    "typescript": "^4.2.4"
+    "telegraf": "^4.5.2",
+    "typescript": "^4.5.2"
   },
   "devDependencies": {
-    "@types/cheerio": "^0.22.28",
-    "@typescript-eslint/eslint-plugin": "^4.23.0",
-    "@typescript-eslint/parser": "^4.23.0",
-    "eslint": "^7.26.0",
-    "eslint-config-airbnb-base": "^14.2.1",
+    "@types/cheerio": "^0.22.30",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
+    "eslint": "^8.4.1",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.4.0",
-    "prettier": "2.3.0"
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "2.5.1"
   }
 }
